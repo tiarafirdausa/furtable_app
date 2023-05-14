@@ -1,28 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:furtable_app/routes.dart';
+import 'package:furtable_app/screens/profile/profile_screen.dart';
+import 'package:furtable_app/screens/profile/profile_screen.dart';
+// import 'package:furtable_app/screens/splash/splash_screen.dart';
+// import 'package:furtable_app/theme.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
-        // textTheme: TextTheme(
-        //   bodyText1: TextStyle(color: kTextColor),
-        //   bodyText2: TextStyle(color: kTextColor),
-        // ),
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-        // primarySwatch: Colors.blue,
-      ),
+      // theme: theme(),
       // home: SplashScreen(),
+      // We use routeName so that we dont need to remember the name
+      initialRoute: ProfileScreen.routeName,
+      routes: routes,
     );
   }
 }
