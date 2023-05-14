@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:furtable_app/routes.dart';
 import 'package:furtable_app/screens/profile/profile_screen.dart';
-import 'package:furtable_app/screens/profile/profile_screen.dart';
+import 'package:furtable_app/theme.dart';
 // import 'package:furtable_app/screens/splash/splash_screen.dart';
 // import 'package:furtable_app/theme.dart';
 
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      // theme: theme(),
+      theme: theme(),
       // home: SplashScreen(),
       // We use routeName so that we dont need to remember the name
       initialRoute: ProfileScreen.routeName,
