@@ -16,7 +16,7 @@ class ProfilePic extends StatelessWidget {
         clipBehavior: Clip.none,
         children: [
           CircleAvatar(
-            backgroundImage: AssetImage("assets/images/Profile Image.png"),
+            backgroundImage: AssetImage("assets/images/Group 26935.png"),
           ),
           Positioned(
             right: -16,
@@ -30,7 +30,7 @@ class ProfilePic extends StatelessWidget {
                     borderRadius: BorderRadius.circular(50),
                     side: BorderSide(color: Colors.white),
                   ),
-                  primary: Colors.white,
+                  foregroundColor: Colors.white,
                   backgroundColor: Color(0xFFF5F6F9),
                 ),
                 onPressed: () {},
